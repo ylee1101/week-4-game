@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" type="text/css" href="../week-4-game/assets/css/style.css">
+</head>
+<body>
+	<div id = "wrapper">
+
+	<h1><span>Crystal Collector</span></h1>
+
+	<div id="instructions">
+
+		<p>You will be given a random number at the start of the game.</p><br>
+		<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p><br>
+		<p>You win the game by matching your total score to random number, you lose the game if your total socre goes above the random number.</p><br>
+		<p>The value of each crystal is hidden from you until you click on it.</p><br>
+		<p>Each time when the game starts, the game will change the values of each crystal.</p><br>
+
+	</div>
+
+	<div class = "container">
+		<div id = "guessingNumber">
+			<h2>Number to Guess: <span class="value"></span></h2>
+		</div>
+
+		<div id = "scoreboard">
+			<h3><span id="status"></span></h3>
+			<h3>Wins: <span id="win"></span></h3>
+			<h3>Losses: <span id="loss"></span></h3>
+		</div>
+	</div>
+
+	<div id="crystals"></div>
+
+	<div id="totalScore">
+		<h2 id = "yts">Your Total Score is: <span id="youScore">0</span></h2>
+	</div>
+	
+<!-- jQuery -->
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script type="text/javascript" src="../week-4-game/assets/javascript/game.js"></script>
+
+</body>
+</html>
